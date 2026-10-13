@@ -1,0 +1,16 @@
+# ListQA-Eval dependencies
+datasets>=2.14.0
+evaluate>=0.4.0
+jinja2>=3.1.0
+rouge-score>=0.1.2
+scipy>=1.10.0
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+tqdm>=4.65.0
+
+# Development / testing dependencies
+pytest>=7.0
+pytest-cov>=4.0
+black>=23.0
+ruff>=0.1.0

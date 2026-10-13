@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "listqa-eval"
+version = "1.0.0"
+description = "ListQA: A benchmark for evaluating list-formatted question answering with LLM-as-a-Judge scoring"
+readme = "README.md"
+license = {text = "CC-BY-NC-4.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Mayank Kulkarni"},
+    {name = "Rakesh Vaideeswaran"},
+]
+keywords = ["evaluation", "benchmark", "llm", "question-answering", "list-qa"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "datasets>=2.14.0",
+    "evaluate>=0.4.0",
+    "jinja2>=3.1.0",
+    "rouge-score>=0.1.2",
+    "scipy>=1.10.0",
+    "torch>=2.0.0",
+    "transformers>=4.35.0",
+    "accelerate>=0.24.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+listqa-eval = "listqa_eval.run:main"
+
+[project.urls]
+Homepage = "https://listqa.github.io"
+Repository = "https://github.com/amazon-science/ListQA-Eval"
+Dataset = "https://huggingface.co/datasets/AmazonScience/ListQA"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
