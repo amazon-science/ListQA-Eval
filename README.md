@@ -2,7 +2,7 @@
 
 **Official evaluation code for [ListQA: A Benchmark for Evaluating List-Formatted Factual Knowledge Retrieval in Large Language Models](https://listqa.github.io) (NeurIPS 2026, Evaluations and Datasets Track).**
 
-[Project page](https://listqa.github.io) · [Dataset on Hugging Face](https://huggingface.co/datasets/AmazonScience/ListQA) · [Paper](https://arxiv.org/pdf/2610.19165) · [arXiv](https://arxiv.org/abs/2610.19165)
+[[Project page]](https://listqa.github.io) · [[Dataset on Hugging Face]](https://huggingface.co/datasets/AmazonScience/ListQA) · [[Paper]](https://arxiv.org/pdf/2610.19165) · [[arXiv]](https://arxiv.org/abs/2610.19165)
 
 >[!NOTE]
 >This code is being released solely for academic and scientific reproducibility purposes, in support of the methods and findings described in the associated publication. Pull requests are not being accepted in order to maintain the code exactly as it was used in the paper.
